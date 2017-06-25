@@ -46,21 +46,5 @@ Now at yout dev.yaml replace the email and password values by the ones you jus c
 
 * Run tests with `poltergeist`
 ```    
-bundle exec cucumber -p poltergeist
-```
-* Run tests with `firefox`
-```
-bundle exec cucumber -p firefox
-```
-* Run tests with `chrome`
-```
-bundle exec cucumber -p chrome
-```
-* HTML Report
-```
-bundle exec cucumber -p html_report
-```
-* JSON Report for CI
-```
-bundle exec cucumber -p json_report
+cucumber
 ```
