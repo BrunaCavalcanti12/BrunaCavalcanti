@@ -1,0 +1,27 @@
+{
+    "name": "rd-challenge",
+    "description": "QA Challenge for RD",
+    "version": "0.0.1",
+    "main": "index.js",
+    "scripts": {
+        "test": "false"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BrunaCavalcanti12/rd-challenge.git"
+    },
+    "keywords": [
+        "cucumber",
+        "bundler",
+        "ruby",
+        "capybara",
+        "siteprism",
+        "rspec"
+    ],
+    "author": "Bruna Cavalcanti",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/BrunaCavalcanti12/rd-challenge/issues"
+    },
+    "homepage": "https://github.com/BrunaCavalcanti12/rd-challenge#readme"
+}
