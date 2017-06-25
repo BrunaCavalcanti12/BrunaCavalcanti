@@ -34,3 +34,12 @@ Feature: Import Leads
     And don't match fields on list with the RD Station
     And click on next
     Then should see a error message
+
+  Scenario: Save and continue later
+    When I upload a file with 3 leads
+    And check all confirmation options
+    And select some option in the combo box
+    And click the confirmation button
+    And don't match fields on list with the RD Station
+    And click on save and continue later
+    Then should got to the base leads page

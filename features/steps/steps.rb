@@ -60,3 +60,11 @@ end
 Then(/^should see a error message$/) do
   page.should have_content 'Uma ou mais colunas da importação não foram combinadas'
 end
+
+When(/^click on save and continue later$/) do
+  click_on 'js-save-and-exit'
+end
+
+Then(/^should got to the base leads page$/) do
+  page.should have_content 'Base de Leads'
+end
