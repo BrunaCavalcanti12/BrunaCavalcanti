@@ -135,66 +135,66 @@ Have the .CSV file with at least 1 record.
 After creating the account I checked the Configuration part
 Settings / Account
 
-![Alt text](/screenshots/1.png?raw=true)
+![Alt text](/manual-report/screenshots/1.png?raw=true)
  
 In the Account configuration page on the Overview tab, there are the accounts that can be connected, when trying to connect to facebook, system displays the error message: "Aplicativo não configurado: Este aplicativo ainda está em modo de desenvolvimento, e você não tem acesso a ele. Mude para um usuário de teste registrado ou peça permissão a um administrador do aplicativo."
  
-![Alt text](/screenshots/2.png?raw=true)
+![Alt text](/manual-report/screenshots/2.png?raw=true)
 
-![Alt text](/screenshots/3.png?raw=true)
+![Alt text](/manual-report/screenshots/3.png?raw=true)
  
 When I click OK, instead of returning to the screen I was previously in, the error message: "Aplicativo não configurado: Este aplicativo ainda está em modo de desenvolvimento, e você não tem acesso a ele. Mude para um usuário de teste registrado ou peça permissão a um administrador do aplicativo. " Erro ao carregar página: Use o botão Voltar do navegador para tentar novamente ou feche esta janela "
  
-![Alt text](/screenshots/4.png?raw=true)
+![Alt text](/manual-report/screenshots/4.png?raw=true)
 
-![Alt text](/screenshots/5.png?raw=true)
+![Alt text](/manual-report/screenshots/5.png?raw=true)
 
-![Alt text](/screenshots/6.png?raw=true)
+![Alt text](/manual-report/screenshots/6.png?raw=true)
  
 In Settings I successfully completed Integration and Methodology, when I entered Configuration / Success Plan
  
-![Alt text](/screenshots/7.png?raw=true)
+![Alt text](/manual-report/screenshots/7.png?raw=true)
  
 In the Plane Templates tab, the Portuguese Plane is without the icon, which ended up breaking with the page design.
  
-![Alt text](/screenshots/8.png?raw=true)
+![Alt text](/manual-report/screenshots/8.png?raw=true)
  
 When importing leads, I created a lead with 4 records, but upon import for the first time, the system informs you that you have 3 leads to import.
  
-![Alt text](/screenshots/9.png?raw=true)
+![Alt text](/manual-report/screenshots/9.png?raw=true)
 
-![Alt text](/screenshots/10.png?raw=true)
+![Alt text](/manual-report/screenshots/10.png?raw=true)
  
 The system only reports the correct number of leads when you try to import a second time.
  
 When a record is inserted in the CSV file without the filled-in email field, at the time of import, the system displays no problem, but after the file has been imported, the system does not display the record. It should display an error message stating that there is a record with missing data before importing the file.
  
-![Alt text](/screenshots/11.png?raw=true)
+![Alt text](/manual-report/screenshots/11.png?raw=true)
 
-![Alt text](/screenshots/12.png?raw=true)
+![Alt text](/manual-report/screenshots/12.png?raw=true)
 
-![Alt text](/screenshots/13.png?raw=true)
+![Alt text](/manual-report/screenshots/13.png?raw=true)
  
 On the contrary, if you only fill in the email field of the CSV file and import, the system creates a new Lead with only the email, which is not correct either.
  
 Imported 2 leads with the same company "Teste"
  
-![Alt text](/screenshots/14.png?raw=true)
+![Alt text](/manual-report/screenshots/14.png?raw=true)
 
-![Alt text](/screenshots/15.png?raw=true)
+![Alt text](/manual-report/screenshots/15.png?raw=true)
  
 But in the Companies tab, the Teste company is only linked to a registration
  
-![Alt text](/screenshots/16.png?raw=true)
+![Alt text](/manual-report/screenshots/16.png?raw=true)
  
 Among the companies that are in the .CSV file we have: Resultados Digitais; Teste; Maria; Lala; 123; casa da mãe Joana; Teste; Estrela e Lua; Solar
  
-![Alt text](/screenshots/17.png?raw=true)
+![Alt text](/manual-report/screenshots/17.png?raw=true)
  
 I imported this file into the RD Station, and in the companies tab, are the following companies:
 123; bruna; casa da mãe Joana; Lala; Maria; Resultados Digitais; Solar; Teste
  
-![Alt text](/screenshots/18.png?raw=true)
+![Alt text](/manual-report/screenshots/18.png?raw=true)
  
 That is:
 * The company Bruna, exists in the RD Station system, but does not exist in the .CSV file.
