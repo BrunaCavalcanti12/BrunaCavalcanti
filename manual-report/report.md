@@ -97,10 +97,10 @@ Have the .CSV file with at least 1 record.
  
 #### Flows
 - In the Base of Leads click on Import Leads		
-- When you select the Import CSV option, the system displays a screen to 		select the desired .CSV file			
-- The system should display the name of the .csv file that was selected and the number of leads this file has		
-- When selecting the option Learn how to make a CSV, the system should 		display a help screen.
-- When selecting the option or downloading an example, the system should download a sample .CSV file
+	- When you select the Import CSV option, the system displays a screen to select the desired .CSV file		
+		- The system should display the name of the .csv file that was selected and the number of leads this file has	
+	- When selecting the option Learn how to make a CSV, the system should 		display a help screen.
+	- When selecting the option or downloading an example, the system should download a sample .CSV file
 	
 #### Use Case
 Import Leads
@@ -113,19 +113,19 @@ Have the .CSV file with at least 1 record.
 - When you select the Import CSV option, the system displays a screen to select the desired .CSV file
 - Mark options for import
 - Select what you want to import from
-- If you do not check all the options and if you do not select for which to realize the import the button Confirm will be disabled
-- If you click Cancel, system returns to the Leads Base screen
+	- If you do not check all the options and if you do not select for which to realize the import the button Confirm will be disabled
+	- If you click Cancel, system returns to the Leads Base screen
 - When you select Confirmation, the system displays the confirmation screen for the fields in the .CSV and RD Station file list
-- If you do not merge the fields correctly, when you click Save and Next, the system should display a message stating: "One or more columns of the import were not combined. Please ignore or select the fields manually to continue. "
-- If all fields are ignored, when you click Save and Next, the system should display a message stating "Your list must contain the email field to be imported."
-- If the user clicks Save and Continue later, the system should go to the Base of Leads screen and display the imported file with the Status Save
-- If the user clicks Cancel, system should go to the Base of Leads screen and present the file the same way it was before.
+	- If you do not merge the fields correctly, when you click Save and Next, the system should display a message stating: "One or more columns of the import were not combined. Please ignore or select the fields manually to continue. "
+	- If all fields are ignored, when you click Save and Next, the system should display a message stating "Your list must contain the email field to be imported."
+	- If the user clicks Save and Continue later, the system should go to the Base of Leads screen and display the imported file with the Status Save
+	- If the user clicks Cancel, system should go to the Base of Leads screen and present the file the same way it was before.
 - When you combine the fields correctly and click Save and Next, the system will go to the Import Leads screen
 - On the Leads Import screen, the user should mark whether to register the conversion only for the new Leads or for all leads in the file
-- If the user chooses to perform the conversion for all leads in the file, the Conversion Date and event name fields will be displayed to be filled
-- If the user chooses not to convert to existing Leads, no field appears
-- If the user clicks Save and Continue later, the system should go to the Base of Leads screen and display the imported file with the Status Save
-- If the user clicks Cancel, system should go to the Base of Leads screen and present the file the same way it was before.
+	- If the user chooses to perform the conversion for all leads in the file, the Conversion Date and event name fields will be displayed to be filled
+	- If the user chooses not to convert to existing Leads, no field appears
+	- If the user clicks Save and Continue later, the system should go to the Base of Leads screen and display the imported file with the Status Save
+	- If the user clicks Cancel, system should go to the Base of Leads screen and present the file the same way it was before.
 - The user selects one of the options and clicks Import
 - The system should go to the Base of Leads screen and display the imported file with the Import Status
 - On the Leads tab all records in the .CSV file must be registered.
@@ -135,66 +135,66 @@ Have the .CSV file with at least 1 record.
 After creating the account I checked the Configuration part
 Settings / Account
 
-
+![Alt text](/screenshots/1.png?raw=true)
  
 In the Account configuration page on the Overview tab, there are the accounts that can be connected, when trying to connect to facebook, system displays the error message: "Aplicativo não configurado: Este aplicativo ainda está em modo de desenvolvimento, e você não tem acesso a ele. Mude para um usuário de teste registrado ou peça permissão a um administrador do aplicativo."
  
+![Alt text](/screenshots/2.png?raw=true)
 
- 
-
+![Alt text](/screenshots/3.png?raw=true)
  
 When I click OK, instead of returning to the screen I was previously in, the error message: "Aplicativo não configurado: Este aplicativo ainda está em modo de desenvolvimento, e você não tem acesso a ele. Mude para um usuário de teste registrado ou peça permissão a um administrador do aplicativo. " Erro ao carregar página: Use o botão Voltar do navegador para tentar novamente ou feche esta janela "
  
+![Alt text](/screenshots/4.png?raw=true)
 
- 
+![Alt text](/screenshots/5.png?raw=true)
 
+![Alt text](/screenshots/6.png?raw=true)
  
 In Settings I successfully completed Integration and Methodology, when I entered Configuration / Success Plan
  
-
+![Alt text](/screenshots/7.png?raw=true)
  
 In the Plane Templates tab, the Portuguese Plane is without the icon, which ended up breaking with the page design.
  
-
- 
+![Alt text](/screenshots/8.png?raw=true)
  
 When importing leads, I created a lead with 4 records, but upon import for the first time, the system informs you that you have 3 leads to import.
  
+![Alt text](/screenshots/9.png?raw=true)
 
- 
-
+![Alt text](/screenshots/10.png?raw=true)
  
 The system only reports the correct number of leads when you try to import a second time.
  
 When a record is inserted in the CSV file without the filled-in email field, at the time of import, the system displays no problem, but after the file has been imported, the system does not display the record. It should display an error message stating that there is a record with missing data before importing the file.
  
+![Alt text](/screenshots/11.png?raw=true)
 
- 
+![Alt text](/screenshots/12.png?raw=true)
 
- 
-
+![Alt text](/screenshots/13.png?raw=true)
  
 On the contrary, if you only fill in the email field of the CSV file and import, the system creates a new Lead with only the email, which is not correct either.
  
 Imported 2 leads with the same company "Teste"
  
+![Alt text](/screenshots/14.png?raw=true)
 
- 
-
+![Alt text](/screenshots/15.png?raw=true)
  
 But in the Companies tab, the Teste company is only linked to a registration
  
-
+![Alt text](/screenshots/16.png?raw=true)
  
 Among the companies that are in the .CSV file we have: Resultados Digitais; Teste; Maria; Lala; 123; casa da mãe Joana; Teste; Estrela e Lua; Solar
  
-
- 
+![Alt text](/screenshots/17.png?raw=true)
  
 I imported this file into the RD Station, and in the companies tab, are the following companies:
 123; bruna; casa da mãe Joana; Lala; Maria; Resultados Digitais; Solar; Teste
  
-
+![Alt text](/screenshots/18.png?raw=true)
  
 That is:
 * The company Bruna, exists in the RD Station system, but does not exist in the .CSV file.
