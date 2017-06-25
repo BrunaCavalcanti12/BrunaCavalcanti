@@ -30,7 +30,7 @@ Capybara.register_driver :selenium do |app|
   elsif BROWSER.eql?('safari')
     Capybara::Selenium::Driver.new(app, :browser => :safari)
   elsif BROWSER.eql?('poltergeist')
-    options = { js_errors: false }
+    options = { js_errors: false, timeout: 600, phantomjs_options: ['--load-images=no', '--ignore-ssl-errors=true', '--ssl-protocol=any'] }
     Capybara::Poltergeist::Driver.new(app, options)
   end
 end

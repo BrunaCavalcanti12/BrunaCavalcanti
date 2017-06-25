@@ -2,11 +2,12 @@
 # !/usr/bin/env ruby
 require 'site_prism'
 
-module GitHub
+module RDStation
   module Pages
     class LoginPage < SitePrism::Page
-      element :login_field, 'input[name=login]'
-      element :password_field, 'input[name=password]'
+      set_url '/login'
+      element :login_field, 'input[name="user[email]"]'
+      element :password_field, 'input[name="user[password]"]'
       element :sign_in, 'input[type=submit]'
 
       def with(user, pwd)

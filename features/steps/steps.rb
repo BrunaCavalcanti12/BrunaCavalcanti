@@ -1,19 +1,23 @@
 
-Given(/^i visit the "([^"]*)" Page$/) do |pg|
-  home.load
-  home.header.sign_in.click
-  page.should have_title pg
+Given(/^I'm logged in$/) do
+  login.load
+  login.with(CONFIG['email'], CONFIG['password'])
+  page.should have_content 'Dashboard'
 end
 
-Given(/^i have a login$/) do |table|
-  @user = table.hashes[0]['username']
-  @pwd = table.hashes[0]['password']
+Given(/^I visit the import leads page$/) do
+  import_leads.load
+  page.should have_content 'Importação de Leads'
 end
 
-When(/^do login$/) do
-  login.with(@user, @pwd)
+Given(/^I upload a file with 3 leads$/) do
+  attach_file('file', File.expand_path('features/support/fixtures/valid_leads.csv'), visible: false)
 end
 
-Then(/^i see the message$/) do |message|
-  page.should have_content message
+Then(/^I should see the name of the file$/) do
+  page.should have_content 'valid_leads.csv'
+end
+
+Then(/^the number of uploaded leads should be 3$/) do
+  page.should have_content '3'
 end

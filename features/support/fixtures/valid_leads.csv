@@ -1,0 +1,4 @@
+Email,Nome,Sobrenome,Telefone,Empresa,Cargo,Cidade,Tag,Data de criação,Campo de Seleção - Escolha única,Campo de Seleção - Caixa de seleção,Campo de Seleção - Escolha múltipla,Campo de Seleção - Verificação
+fulano@rdstation.com.br,Fulano,Da Silva,(11) 1234-5678,Resultados Digitais,Diretor,Florianópolis,pagina-contato,25/10/11 17:35,opcao1,opcao1,"opcao1,opcao3,opcao7",1
+fulano2@rdstation.com.br,Fulano,Da Silva,(11) 1234-5678,Resultados Digitais,Diretor,Florianópolis,pagina-contato,25/10/11 17:35,opcao1,opcao1,"opcao1,opcao3,opcao7",1
+fulano3@rdstation.com.br,Fulano,Da Silva,(11) 1234-5678,Resultados Digitais,Diretor,Florianópolis,pagina-contato,25/10/11 17:35,opcao1,opcao1,"opcao1,opcao3,opcao7",1

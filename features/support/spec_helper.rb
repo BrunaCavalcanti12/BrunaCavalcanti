@@ -3,14 +3,18 @@
 
 Dir[File.join(File.dirname(__FILE__), '../pages/*.rb')].each { |file| require file }
 
-module GitHub
+module RDStation
   module Pages
     def home
-      GitHub::Pages::HomePage.new
+      RDStation::Pages::HomePage.new
     end
 
     def login
-      GitHub::Pages::LoginPage.new
+      RDStation::Pages::LoginPage.new
+    end
+
+    def import_leads
+      RDStation::Pages::ImportLeadsPage.new
     end
   end
 end

@@ -2,7 +2,7 @@ require_relative 'helper.rb'
 require_relative 'spec_helper.rb'
 
 ## PageObjets Definitions
-World(GitHub::Pages)
+World(RDStation::Pages)
 
 ## Helpers Definitions
 World(Helper)
