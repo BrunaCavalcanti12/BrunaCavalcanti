@@ -28,7 +28,7 @@ When(/^check all confirmation options$/) do
   check 'responsible_confirm'
 end
 
-When(/^select any option in the combo box$/) do
+When(/^select some option in the combo box$/) do
   find('#lead_import_import_reason').find('option[value="1"]').select_option
 end
 
@@ -38,4 +38,14 @@ end
 
 Then(/^I should got to the match fields page$/) do
   page.should have_content 'Combine os campos de sua lista com os do RD Station.'
+end
+
+When(/^don't check any confirmation options$/) do
+end
+
+When(/^don't select any option in the combo box$/) do
+end
+
+Then(/^I shouldn't be able to click the confirmation button$/) do
+  expect(page).to have_button('js-confirm-import', disabled: true)
 end

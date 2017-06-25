@@ -16,7 +16,13 @@ Feature: Import Leads
   Scenario: Success import leads
     When I upload a file with 3 leads
     And check all confirmation options
-    And select any option in the combo box
+    And select some option in the combo box
     And click the confirmation button
     Then I should got to the match fields page
+
+  Scenario: Error import leads
+    When I upload a file with 3 leads
+    And don't check any confirmation options
+    And don't select any option in the combo box
+    Then I shouldn't be able to click the confirmation button
   
