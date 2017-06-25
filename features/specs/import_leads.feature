@@ -25,4 +25,12 @@ Feature: Import Leads
     And don't check any confirmation options
     And don't select any option in the combo box
     Then I shouldn't be able to click the confirmation button
-  
+
+  Scenario: Matching leads error
+    When I upload a file with 3 leads
+    And check all confirmation options
+    And select some option in the combo box
+    And click the confirmation button
+    And don't match fields on list with the RD Station
+    And click on next
+    Then should see a error message

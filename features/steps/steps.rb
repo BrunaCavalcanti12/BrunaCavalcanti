@@ -49,3 +49,14 @@ end
 Then(/^I shouldn't be able to click the confirmation button$/) do
   expect(page).to have_button('js-confirm-import', disabled: true)
 end
+
+When(/^don't match fields on list with the RD Station$/) do
+end
+
+When(/^click on next$/) do
+  click_on 'js-save-and-proceed'
+end
+
+Then(/^should see a error message$/) do
+  page.should have_content 'Uma ou mais colunas da importação não foram combinadas'
+end
