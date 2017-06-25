@@ -10,10 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-* Install Ruby 2.3.1 from https://www.ruby-lang.org/en/downloads/ or via RVM (https://rvm.io/).
-* Install `.Ruby >2.3.0`_
-* Install `Firefox` only `48` version
-* Install `Chrome` and `chromedriver`
+* Install Ruby 2.3.1 from https://www.ruby-lang.org/en/downloads/ or via RVM (https://rvm.io/)
 * Install `PhantomJS`
 * Install `Bundler`
 
