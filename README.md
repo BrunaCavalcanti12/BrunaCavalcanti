@@ -14,7 +14,6 @@ These instructions will get you a copy of the project up and running on your loc
 * Install `Chrome` and `chromedriver`
 * Install `PhantomJS`
 * Install `Bundler`
-```
 
 ### Installing
 
