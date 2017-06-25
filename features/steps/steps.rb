@@ -21,3 +21,21 @@ end
 Then(/^the number of uploaded leads should be 3$/) do
   page.should have_content '3'
 end
+
+When(/^check all confirmation options$/) do
+  check 'politics_confirm'
+  check 'plan_update_confirm'
+  check 'responsible_confirm'
+end
+
+When(/^select any option in the combo box$/) do
+  find('#lead_import_import_reason').find('option[value="1"]').select_option
+end
+
+When(/^click the confirmation button$/) do
+  click_on 'js-confirm-import'
+end
+
+Then(/^I should got to the match fields page$/) do
+  page.should have_content 'Combine os campos de sua lista com os do RD Station.'
+end
