@@ -4,7 +4,7 @@ Manual report and test automation for the RD Station APP
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development purposes.
 
 ### Prerequisites
 
@@ -26,6 +26,21 @@ bundle install
 ```
   
 ### Basic Guide
+
+#### Authentication
+
+Before you run the tests you need to register a test account [here](https://app-staging.rdstation.com.br/cadastro).
+
+Now you will create your dev configuration using the sample.
+
+At the root of the repo type this on your terminal.
+```
+cp features/support/config/dev.example.yaml features/support/config/dev.yaml
+```
+
+Now at yout dev.yaml replace the email and password values by the ones you jus created.
+
+#### Available Commands
 
 * Run tests with `poltergeist`
 ```    
