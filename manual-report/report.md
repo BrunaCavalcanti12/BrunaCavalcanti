@@ -2,9 +2,9 @@
  
 The system has a Home that is DashBoard, it has information about: Success Plans, Actions, Sales Funnel, Most Accessed Pages, Latest Conversions of Leads, Last Landing Page and Last Email Campaign. There is also a Help button (which is on all system screens) which, when selected, redirects the user to a help page.
  
-It has the Attract functionality, where the user can make posts in Social Media, Include keywords, optimize pages (SEO), and tools for Blog.
+It has a Attract feature, where the user can make posts in Social Media, Include keywords, optimize pages (SEO), and tools for Blog.
  
-It has the functionality Convert, where the user can create, update, visualize:
+It has a Convert feature, where the user can create, update, visualize:
 	
 - Landing Pages;
 - Forms;
@@ -21,7 +21,7 @@ It has the Relate feature, where the user can:
 - Manage Marketing Automation;
 - Manage Email;
  
-It has the Analyze functionality, where the user can analyze:
+It has the Analyze feature, where the user can analyze:
 	
 - The Marketing BI (Enterprise);
 - The reach;
@@ -42,7 +42,6 @@ It has the Configuration feature where the user can make all kinds of configurat
 - In Marketplace;
 - State and Earn;
  
- 
 Although I have seen the system as a whole, I will describe two great features that I thought were important: Create Landing Page and Import Leads.
 Then I will describe points for improvement.
 
@@ -55,36 +54,32 @@ I, as a RD Station user, want to be able to create my landing page
 Template filter by type
  
 #### Flows
-* Should display list of template types
-* When clicking on a template type you should exclude from the list of templates all templates that are not of the type selected and indicate the selected filter
-* The list of types contains the Everyone option.
-* Everyone must be selected by default
+* Should display the list of template types
+* When you select a filter it should exclude from the list all templates that doesn't match the filter and indicate the selected filter
+* All options must be selected by default
 * When clicking on an already selected option nothing should happen
-* When selecting a template type and then selecting the all option, you must select all type
-
-### Feature
-Template list
+* The list of types should contain an option labeled 'All' 
+* When selecting a template type and then selecting the 'All' option, it should show all templates
  
 #### Use Case
-Template
+Template list
  
 #### Flows
-- Each list item should display a photo, name, and View and Select options
-- When you click Preview, you should see the template for visualization only
-- By clicking Select you should go to the screen for Creating Landing Page
+- Each list item should display a photo, name, a view button and a select button
+- When you click the view button, you should see the template for visualization only
+- When you click the select button, you should go to the screen for creating a landing page
  
 #### Use Case
 Creating Landing Page
  
 #### Flows
-- On the Create Landing Page screen there is the Name field and the Cancel and Create Landing Page buttons
-- The Create Landing Page field is only enabled when the Name field is filled in.
-- When you fill in the Name field and click Create Landing Page, system displays the template to be edited
-- When you make any changes and click Save and Next, the system updates the Landing Page and displays the fields that can be entered
-- When you click Save and Next, the system goes to the Settings screen
-- When you click Save and Next, system updates the Landing Page
-- When you click Publish, the system publishes your Landing Page on the page that you entered
- 
+- On the Create Landing Page's page there is a name field, a cancel button and a create button
+- The create button is enabled only when the name field is filled in
+- When you type the name field and press the create button, the system should display the template to be edited
+- When you make any changes and click save and next buttons, the system should update the landing page and display the fields that can be edited
+- When you click save and next buttons, the system should go to the settings page
+- When you click save and next buttons, system should update the Landing Page
+- When you click publish, the system should publishe your landing page on the page that you entered
  
 ### Feature
 I, as a RD Station user, want to import Leads
@@ -92,42 +87,42 @@ I, as a RD Station user, want to import Leads
 #### Use Case
 Verification of the quantity of Leads for Import
 
-Prerequisite:
+Requirement:
 Have the .CSV file with at least 1 record.
  
 #### Flows
-- In the Base of Leads click on Import Leads		
+- In the Leads' Base Page click on Import Leads		
 	- When you select the Import CSV option, the system displays a screen to select the desired .CSV file		
-		- The system should display the name of the .csv file that was selected and the number of leads this file has	
-	- When selecting the option Learn how to make a CSV, the system should 		display a help screen.
+		- The system should display the name of the .CSV file that was selected and the number of leads this file has	
+	- When selecting the option "Learn how to make a CSV", the system should display a help screen.
 	- When selecting the option or downloading an example, the system should download a sample .CSV file
 	
 #### Use Case
 Import Leads
 
-Prerequisite:
+Requirement:
 Have the .CSV file with at least 1 record.
 
 #### Flows
-- In the Base of Leads click on Import Leads
-- When you select the Import CSV option, the system displays a screen to select the desired .CSV file
-- Mark options for import
+- In the Leads' Base Page click the button Import Leads
+- When you select the "Import CSV" option, the system displays a screen to select the desired .CSV file
+- Check options for import
 - Select what you want to import from
-	- If you do not check all the options and if you do not select for which to realize the import the button Confirm will be disabled
+	- If you do not check all options and select a option in the combobox the button Confirm will be disabled
 	- If you click Cancel, system returns to the Leads Base screen
-- When you select Confirmation, the system displays the confirmation screen for the fields in the .CSV and RD Station file list
-	- If you do not merge the fields correctly, when you click Save and Next, the system should display a message stating: "One or more columns of the import were not combined. Please ignore or select the fields manually to continue. "
+- When you click the Confirmation button, the system should displays the confirmation page with the fields in the .CSV and RD Station file list
+	- If you do not merge the fields correctly, when you click Save and Next, the system should display a message stating: "One or more columns of the import were not combined. Please ignore or select the fields manually to continue."
 	- If all fields are ignored, when you click Save and Next, the system should display a message stating "Your list must contain the email field to be imported."
-	- If the user clicks Save and Continue later, the system should go to the Base of Leads screen and display the imported file with the Status Save
-	- If the user clicks Cancel, system should go to the Base of Leads screen and present the file the same way it was before.
-- When you combine the fields correctly and click Save and Next, the system will go to the Import Leads screen
-- On the Leads Import screen, the user should mark whether to register the conversion only for the new Leads or for all leads in the file
-	- If the user chooses to perform the conversion for all leads in the file, the Conversion Date and event name fields will be displayed to be filled
-	- If the user chooses not to convert to existing Leads, no field appears
-	- If the user clicks Save and Continue later, the system should go to the Base of Leads screen and display the imported file with the Status Save
-	- If the user clicks Cancel, system should go to the Base of Leads screen and present the file the same way it was before.
+	- If the user clicks Save and Continue later, the system should go to the Leads Base page and show the imported file with the Status Saved
+	- If the user clicks the Cancel button, the system should go to the Leads Base page and show the file the same way it was before.
+- When you combine the fields correctly and click Save and Next, the system should go to the Import Leads page
+- On the Leads Import page, the user should mark whether to register the conversion only for the new Leads or for all leads in the file
+	- If the user chooses to perform the conversion for all leads in the file, the system should show the Conversion Date and event name fields
+	- If the user chooses not to convert to existing Leads, no fields should appear
+	- If the user clicks Save and Continue later, the system should go to the Leads Base page and show the imported file with the Status Saved
+	- If the user clicks the Cancel button, the system should go to the Leads Base page and show the file the same way it was before.
 - The user selects one of the options and clicks Import
-- The system should go to the Base of Leads screen and display the imported file with the Import Status
+- The system should go to the Leads Base page and show the imported file with the status "imported"
 - On the Leads tab all records in the .CSV file must be registered.
 
 ## Attention points
@@ -137,7 +132,7 @@ Settings / Account
 
 ![Alt text](/manual-report/screenshots/1.png?raw=true)
  
-In the Account configuration page on the Overview tab, there are the accounts that can be connected, when trying to connect to facebook, system displays the error message: "Aplicativo não configurado: Este aplicativo ainda está em modo de desenvolvimento, e você não tem acesso a ele. Mude para um usuário de teste registrado ou peça permissão a um administrador do aplicativo."
+In the Account configuration page on the Overview tab, there are the accounts that can be connected, when trying to connect to facebook, the system displays the error message: "Aplicativo não configurado: Este aplicativo ainda está em modo de desenvolvimento, e você não tem acesso a ele. Mude para um usuário de teste registrado ou peça permissão a um administrador do aplicativo."
  
 ![Alt text](/manual-report/screenshots/2.png?raw=true)
 
@@ -155,11 +150,11 @@ In Settings I successfully completed Integration and Methodology, when I entered
  
 ![Alt text](/manual-report/screenshots/7.png?raw=true)
  
-In the Plane Templates tab, the Portuguese Plane is without the icon, which ended up breaking with the page design.
+In the Plane Templates tab, the Portuguese Plane icon is not showing, which ended up breaking with the page design.
  
 ![Alt text](/manual-report/screenshots/8.png?raw=true)
  
-When importing leads, I created a lead with 4 records, but upon import for the first time, the system informs you that you have 3 leads to import.
+When importing leads, I created a lead with 4 records, but when importing for the first time, the system tells you that you have only 3 leads to import.
  
 ![Alt text](/manual-report/screenshots/9.png?raw=true)
 
@@ -175,15 +170,15 @@ When a record is inserted in the CSV file without the filled-in email field, at 
 
 ![Alt text](/manual-report/screenshots/13.png?raw=true)
  
-On the contrary, if you only fill in the email field of the CSV file and import, the system creates a new Lead with only the email, which is not correct either.
+If you only fill in the email field of the CSV file and import, the system creates a new Lead with only the email, which is not correct either.
  
-Imported 2 leads with the same company "Teste"
+I imported 2 leads with the same company "Teste"
  
 ![Alt text](/manual-report/screenshots/14.png?raw=true)
 
 ![Alt text](/manual-report/screenshots/15.png?raw=true)
  
-But in the Companies tab, the Teste company is only linked to a registration
+But in the Companies tab, the Teste company is only linked to one lead
  
 ![Alt text](/manual-report/screenshots/16.png?raw=true)
  
