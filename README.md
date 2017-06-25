@@ -4,7 +4,7 @@ Manual report and test automation for the RD Station APP
 
 ## Getting Started
 
-For the manual report go [here](/MANUAL_REPORT.md).
+For the manual report go [here](/manual-report/report.md).
 
 These instructions will get you a copy of the project up and running on your local machine for development purposes.
 

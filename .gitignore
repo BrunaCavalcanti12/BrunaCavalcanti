@@ -9,7 +9,7 @@ reports/*
 /out
 /spec/out
 /node_modules
-screenshots/
+/screenshots/
 features_report.html
 features_report.json
 dev.yaml
